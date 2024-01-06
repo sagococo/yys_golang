@@ -19,7 +19,7 @@ func main() {
 	shotSquare = image.Rect(1766, 54, 2555, 643)
 	for {
 		capture(shotSquare)
-		for _, v := range []string{"call", "autoagree", "agree", "yunhunagree", "huodong", "dashe", "jixu", "attack", "users", "yuling", "yeyuanhuo", "tiaozhan"} {
+		for _, v := range []string{"call", "chaotiao", "gu", "sousuo", "autoagree", "agree", "zhunbei", "yunhunagree", "huodong", "dashe", "jixu", "attack", "users", "yuling", "yeyuanhuo", "tiaozhan"} {
 			if templateFile(v) {
 				if v == "jixu" && time.Now().Unix()-tupoT > 9 && templateFile("tupo") {
 					tupoNum++
